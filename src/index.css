@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.menu-tooltip {
+  @apply absolute w-auto p-2 m-2 min-w-max left-14 rounded-md shadow-md
+  text-white bg-gray-900 
+  text-xs font-bold 
+  transition-all duration-100 scale-0 origin-left;
+}
+
+.menu-hr {
+  @apply bg-gray-200 dark:bg-gray-800 
+  border border-gray-200 dark:border-gray-800 rounded-full
+  mx-2;
+}
