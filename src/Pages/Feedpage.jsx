@@ -28,8 +28,9 @@ function FeedPage ({name}) {
     };
 
     return (
-        <div className="App">
+        <div className= " bg-purple-500 h-screen">
             <h1>{name}'s Bottle Timings</h1>
+                <br></br>
                 <form onSubmit={submitHandlerTime}>
                 <input
                     required
@@ -40,6 +41,7 @@ function FeedPage ({name}) {
                 />
                 <button type="Submit">Submit</button>
                 </form>
+                <br></br>
                 <form onSubmit={submitHandlerQty}>
                 <input
                     required
@@ -50,10 +52,12 @@ function FeedPage ({name}) {
                 />
                 <button type="Submit">Submit</button>
                 </form>
+                <br></br>
             {submittedTime}
             <br></br>
-            <br></br>
             {submittedQty}
+            <br></br>
+            <br></br>
             <Link to="/MainPage">Back to Diary</Link>
         </div>
     );

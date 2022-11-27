@@ -16,8 +16,9 @@ function Diaper ({name}) {
     };
 
     return (
-        <div>
+        <div className="bg-purple-500 h-screen">
             <h1>{name}'s Diaper Change Timings</h1>
+                <br></br>
                 <form onSubmit={submitHandlerDiaper}>
                 <input
                 required

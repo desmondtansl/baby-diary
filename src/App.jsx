@@ -3,6 +3,7 @@ import LandingPage from "./Pages/LandingPage";
 import MainPage from './Pages/MainPage';
 import FeedPage from './Pages/Feedpage';
 import Diaper from './Pages/Diaper';
+import Recipe from './Pages/Recipe';
 import { useState } from "react";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route path="/MainPage" element={<MainPage name={name}/>} />
         <Route path="/FeedPage" element={<FeedPage name={name}/>} />
         <Route path="/Diaper" element={<Diaper name={name}/>} />
+        <Route path="/Recipe" element={<Recipe name={name}/>} />
       </Routes>
     </BrowserRouter>
   )
