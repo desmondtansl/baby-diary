@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import LandingPage from "./Pages/LandingPage";
-import MainPage from "./Pages/MainPage";
-import FeedPage from './Pages/FeedPage';
+import MainPage from './Pages/MainPage';
+import FeedPage from './Pages/Feedpage';
 import Diaper from './Pages/Diaper';
 import { useState } from "react";
 
