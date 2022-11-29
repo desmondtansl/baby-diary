@@ -14,8 +14,8 @@ const Icons = () => {
             <Link to="/Diaper">
             <MenuIcons text="Diaper Change" icon={<MdBabyChangingStation size="60"/>} />
             </Link>
-            <Link to="/Recipe">
-            <MenuIcons text="Recipes" icon={<MdRestaurantMenu size="60" />} />
+            <Link to="/RecipeSearch">
+            <MenuIcons text="RecipeSearch" icon={<MdRestaurantMenu size="60" />} />
             </Link>
         </div>
     );

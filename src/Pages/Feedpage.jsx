@@ -15,23 +15,19 @@ function FeedPage ({name}) {
         setEnteredQty(e.target.value);
     };
 
-    const submitHandlerTime = (e) => {
+    const submitHandlerForm = (e) => {
         e.preventDefault();
         setSubmittedTime(enteredTime);
-        setEnteredTime("");
-    };
-
-    const submitHandlerQty = (e) => {
-        e.preventDefault();
         setSubmittedQty(enteredQty);
         setEnteredQty("");
+        setEnteredTime("");
     };
 
     return (
         <div className= " bg-purple-500 h-screen">
             <h1>{name}'s Bottle Timings</h1>
                 <br></br>
-                <form onSubmit={submitHandlerTime}>
+                <form onSubmit={submitHandlerForm}>
                 <input
                     required
                     placeholder="enter time"
@@ -39,10 +35,7 @@ function FeedPage ({name}) {
                     value={enteredTime}
                     onChange={timeChangeHandler}
                 />
-                <button type="Submit">Submit</button>
-                </form>
                 <br></br>
-                <form onSubmit={submitHandlerQty}>
                 <input
                     required
                     placeholder="enter amount"

@@ -1,38 +1,38 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-function Diaper ({name}) {
-    const [changeTime, setChangeTime] = useState("");
-    const [actualTime, setActualTime] = useState("");
+function Nap ({name}) {
+    const [naptime, setNapTime] = useState("");
+    const [actualNapTime, setActualNapTime] = useState("");
 
-    const diaperChangeHandler = (e) => {
-        setChangeTime(e.target.value);
+    const napTimeHandler = (e) => {
+        setNapTime(e.target.value);
     };
 
-    const submitHandlerDiaper = (e) => {
+    const submitHandlerNap = (e) => {
         e.preventDefault();
-        setActualTime(changeTime);
-    };
+        setActualNapTime(naptime);
+    }
 
     return (
         <div className="bg-purple-500 h-screen">
-            <h1>{name}'s Diaper Change Timings</h1>
+            <h1>{name}'s Nap Timings</h1>
                 <br></br>
-                <form onSubmit={submitHandlerDiaper}>
+                <form onSubmit={submitHandlerNap}>
                 <input
                 required
                 placeholder="enter time"
                 type="text"
-                value={changeTime}
-                onChange={diaperChangeHandler}>
+                value={naptime}
+                onChange={napTimeHandler}>
                 </input>
             <button type="submit">Submit</button>
                 </form>
-            {actualTime}
+            {actualNapTime}
             <br></br>
             <br></br>
             <Link to="/MainPage">Back to Diary</Link>
         </div>
     )
-};
-export default Diaper;
+}
+export default Nap;

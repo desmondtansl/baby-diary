@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate} from "react-router-dom";
 
-function BabyName ({name, setBabyName}) {
+function BabyName ({name, setBabyName, age, setBabyAge}) {
     
     const navigate = useNavigate();
 
@@ -9,12 +9,12 @@ function BabyName ({name, setBabyName}) {
         e.preventDefault();
         console.log(name);
         navigate("/MainPage");
-    }
+    };
 
     return (
         <div className= " bg-purple-500 h-screen flex justify-center">
         <form className="flex flex-col justify-center" onSubmit={submitHandler}>
-            <div className=" text-center py-4 text-4xl">Please enter your baby's name</div>
+            <div className=" text-center py-4 text-4xl">Baby's Profile</div>
             <div className="Enter Name text-center">
                 <label className=" text-2xl" htmlFor="Name">Baby's Name: </label>
                 <input
@@ -24,7 +24,18 @@ function BabyName ({name, setBabyName}) {
                 id="name" 
                 onChange={(e) => setBabyName(e.target.value)} value={name}>
                 </input>
+                <br></br>
+                <label className=" text-2xl" htmlFor="Age">Baby's Age: </label>
+                <input
+                required
+                placeholder="enter in months"
+                type="age"
+                name="age"
+                id="age"
+                onChange={(e) => {setBabyAge(e.target.value)}} value={age}>
+                </input>
             </div>
+            <br></br>
             <div className="flex space-x-2 justify-center pt-3">
             <button
             type="submit"
