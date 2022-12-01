@@ -39,7 +39,7 @@ function RecipeSearch ({choice}) {
             <div className=" pb-2 text-2xl" htmlFor="Recipe Search">Recipe Search</div>
             <input type="text" placeholder="Results excl intolerances" onChange={handleChange}/>
             <button 
-            className=" text-base p-3 inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" 
+            className=" text-base p-3 inline-block px-6 py-2.5 bg-blue-600 text-white font-medium leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" 
             type="Search">
             Search
             </button>
@@ -48,7 +48,7 @@ function RecipeSearch ({choice}) {
             {recipeList}
             <br></br>
             <br></br>
-            <Link className=" text-base inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" to="/MainPage">Back to Diary</Link>
+            <Link className=" text-base inline-block px-6 py-2.5 bg-blue-600 text-white font-medium leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out" to="/MainPage">Back to Diary</Link>
         </div>
     );
 };
