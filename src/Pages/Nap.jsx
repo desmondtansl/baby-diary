@@ -15,7 +15,7 @@ function Nap ({name}) {
     }
 
     return (
-        <div className="bg-purple-500 h-screen">
+        <div className="bg-orange-300 h-screen">
             <h1>{name}'s Nap Timings</h1>
                 <br></br>
                 <form onSubmit={submitHandlerNap}>

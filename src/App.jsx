@@ -10,12 +10,13 @@ import { useState } from "react";
 function App() {
   const [name, setBabyName] = useState("");
   const [age, setBabyAge] = useState("");
+  const [choice, setChoice] = useState([]);
 
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<LandingPage name={name} setBabyName={setBabyName} age={age} setBabyAge={setBabyAge}/>} />
-        <Route path="/MainPage" element={<MainPage name={name} age={age}/>} />
+        <Route path="/" element={<LandingPage name={name} setBabyName={setBabyName} age={age} setBabyAge={setBabyAge} choice={choice} setChoice={setChoice}/>}/>
+        <Route path="/MainPage" element={<MainPage name={name} age={age} choice={choice}/>} />
         <Route path="/FeedPage" element={<FeedPage name={name}/>} />
         <Route path="/Nap" element={<Nap name={name}/>} />
         <Route path="/Diaper" element={<Diaper name={name}/>} />

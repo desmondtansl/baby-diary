@@ -33,7 +33,7 @@ function RecipeSearch () {
     });
 
     return (
-        <div className=" bg-purple-500">
+        <div className=" bg-orange-300 h-screen">
             <form onSubmit={handleSubmit}>
             <label htmlFor="Enter your intolerance">Enter your intolerance</label>
             <br></br>

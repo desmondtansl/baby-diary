@@ -1,7 +1,8 @@
 import React from "react";
-import { useNavigate} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import Options from "../Components/Options";
 
-function BabyName ({name, setBabyName, age, setBabyAge}) {
+function BabyName ({name, setBabyName, age, setBabyAge, choice, setChoice}) {
     
     const navigate = useNavigate();
 
@@ -12,9 +13,9 @@ function BabyName ({name, setBabyName, age, setBabyAge}) {
     };
 
     return (
-        <div className= " bg-purple-500 h-screen flex justify-center">
+        <div className= " bg-orange-300 h-screen flex justify-center">
         <form className="flex flex-col justify-center" onSubmit={submitHandler}>
-            <div className=" text-center py-4 text-4xl">Baby's Profile</div>
+            <div className=" text-center py-4 text-4xl">Create A Profile</div>
             <div className="Enter Name text-center">
                 <label className=" text-2xl" htmlFor="Name">Baby's Name: </label>
                 <input
@@ -35,6 +36,8 @@ function BabyName ({name, setBabyName, age, setBabyAge}) {
                 onChange={(e) => {setBabyAge(e.target.value)}} value={age}>
                 </input>
             </div>
+            <br></br>
+            <Options value={choice} setChoice={setChoice} />
             <br></br>
             <div className="flex space-x-2 justify-center pt-3">
             <button
