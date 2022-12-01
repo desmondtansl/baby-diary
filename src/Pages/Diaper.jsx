@@ -32,6 +32,7 @@ function Diaper ({name}) {
             Submit
             </button>
                 </form>
+            <br></br>
             {actualTime}
             <br></br>
             <br></br>

@@ -32,6 +32,7 @@ function Nap ({name}) {
                 Submit
                 </button>
                 </form>
+            <br></br>
             {actualNapTime}
             <br></br>
             <br></br>
