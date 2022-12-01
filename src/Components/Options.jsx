@@ -21,11 +21,11 @@ const DropdownExampleMultipleSelection = ({choice, setChoice}) => {
     const handleChange = (e, {value}) => {
       setChoice(value)
       console.log(value)
-    }
+    };
 
     return(
   <Dropdown placeholder='Choose Intolerance' fluid multiple selection options={options}
   onChange={handleChange.bind(this)} /> 
     )
-}
+};
 export default DropdownExampleMultipleSelection;

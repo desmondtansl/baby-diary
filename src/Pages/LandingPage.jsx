@@ -1,8 +1,9 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import Options from "../Components/Options";
+import ProfilePic from "../Components/ProfilePic";
 
-function BabyName ({name, setBabyName, age, setBabyAge, choice, setChoice}) {
+function BabyName ({name, setBabyName, age, setBabyAge, choice, setChoice, pic, setPic}) {
     
     const navigate = useNavigate();
 
@@ -41,6 +42,8 @@ function BabyName ({name, setBabyName, age, setBabyAge, choice, setChoice}) {
             </div>
             <br></br>
             <Options value={choice} setChoice={setChoice} />
+            <br></br>
+            <ProfilePic pic={pic} setPic={setPic}/>
             <br></br>
             <div className="flex space-x-2 justify-center pt-3">
             <button
