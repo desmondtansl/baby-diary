@@ -21,17 +21,25 @@ function Nap ({name}) {
                 <form onSubmit={submitHandlerNap}>
                 <input
                 required
-                placeholder="enter time"
+                placeholder="Enter Time"
                 type="text"
                 value={naptime}
                 onChange={napTimeHandler}>
                 </input>
-            <button type="submit">Submit</button>
+                <button
+                className="text-base inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+                type="submit">
+                Submit
+                </button>
                 </form>
             {actualNapTime}
             <br></br>
             <br></br>
-            <Link to="/MainPage">Back to Diary</Link>
+            <Link 
+            className="text-base inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out"
+            to="/MainPage">
+            Back to Diary
+            </Link>
         </div>
     )
 }

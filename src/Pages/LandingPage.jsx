@@ -19,6 +19,7 @@ function BabyName ({name, setBabyName, age, setBabyAge, choice, setChoice}) {
             <div className="Enter Name text-center">
                 <label className=" text-2xl" htmlFor="Name">Baby's Name: </label>
                 <input
+                className="text-2xl"
                 required
                 type="name" 
                 name="name"
@@ -26,8 +27,10 @@ function BabyName ({name, setBabyName, age, setBabyAge, choice, setChoice}) {
                 onChange={(e) => setBabyName(e.target.value)} value={name}>
                 </input>
                 <br></br>
+                <br></br>
                 <label className=" text-2xl" htmlFor="Age">Baby's Age: </label>
                 <input
+                className="text-2xl"
                 required
                 placeholder="enter in months"
                 type="age"

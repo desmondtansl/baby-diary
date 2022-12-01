@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Icons = () => {
     return (
-        <div className=" justify-center flex flex-col gap-6">
+        <div className=" justify-center flex gap-6">
             <Link to="/Feedpage">
             <MenuIcons text="Feeding Time" icon={<GiBabyBottle size="60"/>} />
             </Link>
