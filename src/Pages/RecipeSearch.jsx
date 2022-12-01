@@ -1,15 +1,15 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-function RecipeSearch () {
+function RecipeSearch ({choice}) {
     const [recipe, setRecipe] = useState("");
     const [search, setSearch] = useState("");
 
 
     const newRecipe = async () => {
-        const response = await fetch (`https://api.spoonacular.com/recipes/complexSearch?apiKey=${import.meta.env.VITE_SPOONACULARKEY}&intolerances=${search}&instructionsRequired=true&addRecipeInformation=true&number=25`)
+        const response = await fetch (`https://api.spoonacular.com/recipes/complexSearch?apiKey=${import.meta.env.VITE_SPOONACULARKEY}&intolerances=${choice}&instructionsRequired=true&addRecipeInformation=true&number=25`)
         const res = await response.json();
-        console.log(`https://api.spoonacular.com/recipes/complexSearch?apiKey=${import.meta.env.VITE_SPOONACULARKEY}&intolerances=${search}&instructionsRequired=true&addRecipeInformation=true&number=25`)
+        console.log(`https://api.spoonacular.com/recipes/complexSearch?apiKey=${import.meta.env.VITE_SPOONACULARKEY}&intolerances=${choice}&instructionsRequired=true&addRecipeInformation=true&number=25`)
         setRecipe(res);
     };
     

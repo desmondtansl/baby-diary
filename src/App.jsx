@@ -20,7 +20,7 @@ function App() {
         <Route path="/FeedPage" element={<FeedPage name={name}/>} />
         <Route path="/Nap" element={<Nap name={name}/>} />
         <Route path="/Diaper" element={<Diaper name={name}/>} />
-        <Route path="/RecipeSearch" element={<RecipeSearch name={name}/>} />
+        <Route path="/RecipeSearch" element={<RecipeSearch name={name} choice={choice} />} />
       </Routes>
     </BrowserRouter>
   )
